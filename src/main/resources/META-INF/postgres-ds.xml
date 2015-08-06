@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datasources>
+	<datasource jndi-name="java:jboss/datasources/INVMGMTDS" pool-name="java:jboss/datasources/INVMGMTDS_Pool" >
+		<connection-url>jdbc:postgresql://127.0.0.1:5432/invmgmtdb</connection-url>
+        <driver-class>org.postgresql.Driver</driver-class>
+        <driver>postgresql-jdbc4</driver>
+        <pool>
+            <prefill>false</prefill>
+            <use-strict-min>false</use-strict-min>
+            <flush-strategy>FailingConnectionOnly</flush-strategy>
+        </pool>
+        <security>
+            <user-name>aspiderngi</user-name>
+            <password>p@ssW0rd</password>
+        </security>
+	</datasource>
+</datasources>
